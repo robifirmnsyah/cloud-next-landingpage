@@ -1,42 +1,36 @@
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { PlayCircle } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { CalendarDays, Clock, MapPin } from 'lucide-react';
 
 export default function Hero() {
-  return (
-    <section id="home" className="py-20 md:py-32 bg-accent">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter font-headline">
-              Cloud Next Extended Bandung
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              Innovate. Connect. Transform. Join us for a day of learning and networking with cloud enthusiasts and experts.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button size="lg" asChild>
-                <a href="#register">Register Now</a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="#agenda">View Agenda</a>
-              </Button>
+    return (
+        <section className="relative flex items-center justify-center min-h-screen w-full pt-24 pb-12">
+             <div className="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:2.5rem_2.5rem]"></div>
+            <div className="container relative z-10 flex flex-col items-center px-4 text-center">
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent pb-2">
+                    Cloud Next Extended 2025
+                </h1>
+                <Badge className="mt-4 text-base font-semibold border-0 text-white px-6 py-2 rounded-full bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500">
+                    Bandung
+                </Badge>
+
+                <Card className="mt-8 w-full max-w-sm shadow-2xl bg-card/80 backdrop-blur-sm border-white/10">
+                    <CardContent className="p-6 space-y-5">
+                        <div className="flex items-center gap-4 text-left">
+                            <CalendarDays className="h-7 w-7 text-blue-400 flex-shrink-0" />
+                            <p className="text-lg font-medium text-card-foreground">Saturday, August 2nd</p>
+                        </div>
+                        <div className="flex items-center gap-4 text-left">
+                            <Clock className="h-7 w-7 text-orange-400 flex-shrink-0" />
+                            <p className="text-lg font-medium text-card-foreground">09.00 AM - 05.00 PM</p>
+                        </div>
+                        <div className="flex items-center gap-4 text-left">
+                            <MapPin className="h-7 w-7 text-red-500 flex-shrink-0" />
+                            <p className="text-lg font-medium text-card-foreground">West Java Investment Hub (WJIH)</p>
+                        </div>
+                    </CardContent>
+                </Card>
             </div>
-          </div>
-          <div className="relative group aspect-video rounded-lg overflow-hidden shadow-lg cursor-pointer">
-            <Image
-              src="https://placehold.co/1280x720.png"
-              alt="Event recap video thumbnail"
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              data-ai-hint="conference technology"
-            />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <PlayCircle className="h-20 w-20 text-white/80 transform transition-transform group-hover:scale-110" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    )
 }
