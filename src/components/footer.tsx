@@ -25,10 +25,10 @@ function FooterLogo() {
 }
 
 const socialLinks = [
-    { icon: Mail, href: 'mailto:gdgcloudbandung@gmail.com', text: 'gdgcloudbandung@gmail.com', color: 'text-rose-500' },
-    { icon: Instagram, href: '#', text: '@gdgcloudbandung', color: 'text-rose-500' },
-    { icon: Youtube, href: '#', text: '@gdgcloudbandung', color: 'text-red-600' },
-    { icon: Linkedin, href: '#', text: 'GDG Cloud Bandung', color: 'text-sky-500' }
+    { platform: 'email', icon: Mail, href: 'mailto:gdgcloudbandung@gmail.com', text: 'gdgcloudbandung@gmail.com', color: 'text-rose-500' },
+    { platform: 'instagram', icon: Instagram, href: '#', text: '@gdgcloudbandung', color: 'text-rose-500' },
+    { platform: 'youtube', icon: Youtube, href: '#', text: '@gdgcloudbandung', color: 'text-red-600' },
+    { platform: 'linkedin', icon: Linkedin, href: '#', text: 'GDG Cloud Bandung', color: 'text-sky-500' }
 ];
 
 export default function Footer() {
@@ -62,7 +62,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg text-white">Connect With Us</h3>
             <ul className="space-y-3">
               {socialLinks.map((link) => (
-                <li key={link.text}>
+                <li key={link.platform}>
                   <Link href={link.href} className="flex items-center gap-3 group">
                     <link.icon className={`h-5 w-5 flex-shrink-0 ${link.color} transition-colors`} />
                     <span className="text-slate-300 group-hover:text-white transition-colors">{link.text}</span>
