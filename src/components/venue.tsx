@@ -35,7 +35,7 @@ export default function Venue() {
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.700805234186!2d107.62438837588384!3d-6.926322367797562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7ef929aa4b7%3A0x9e475f1f42911254!2sWest%20Java%20Investment%20Hub%20(WJI-Hub)!5e0!3m2!1sid!2sid!4v1751178987276!5m2!1sid!2sid"
-              className="w-full h-[450px]"
+              className="w-full aspect-video"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
