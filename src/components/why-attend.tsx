@@ -35,8 +35,8 @@ export default function WhyAttend() {
           {benefits.map((benefit) => (
             <div key={benefit.title} className="text-center">
               <div className="flex justify-center items-center mb-4">
-                <div className="p-4 bg-accent rounded-full">
-                  <benefit.icon className="h-8 w-8 text-primary" />
+                <div className="p-4 bg-muted rounded-full">
+                  <benefit.icon className="h-8 w-8 text-secondary" />
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
