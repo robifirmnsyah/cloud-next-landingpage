@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Cta() {
   return (
@@ -9,8 +10,8 @@ export default function Cta() {
           Secure your spot at Cloud Next Extended Bandung and be part of the future of cloud.
         </p>
         <div className="mt-8">
-          <Button size="lg" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-            Register Now
+          <Button size="lg" variant="secondary" asChild className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+            <Link href="#">Register Now</Link>
           </Button>
         </div>
       </div>

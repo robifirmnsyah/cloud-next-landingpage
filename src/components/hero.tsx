@@ -4,7 +4,7 @@ import { CalendarDays, Clock, MapPin } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="relative flex items-center justify-center min-h-screen w-full pt-24 pb-12">
+        <section className="relative flex items-center justify-center min-h-[calc(100vh-5rem)] w-full py-12">
              <div className="absolute inset-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:2.5rem_2.5rem]"></div>
             <div className="container relative z-10 flex flex-col items-center px-4 text-center">
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text text-transparent pb-2">
