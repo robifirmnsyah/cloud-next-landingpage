@@ -417,7 +417,7 @@ export default function LandingPage() {
 
       {/* Agenda Highlights */}
       <section className="relative z-10 px-6 py-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
@@ -429,44 +429,298 @@ export default function LandingPage() {
 
           <div className="space-y-6">
             <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-              <div className="text-2xl font-bold text-blue-400 min-w-[120px]">09:00 AM</div>
+              <div className="text-2xl font-bold text-blue-400 min-w-[120px]">07:30 AM</div>
               <div className="flex-1">
-                <h4 className="text-xl font-bold mb-2">Registration & Welcome</h4>
-                <p className="text-gray-300">Check-in, networking breakfast, and opening remarks</p>
+                <h4 className="text-xl font-bold mb-2">Registration</h4>
+                <p className="text-gray-300">Check-in and welcome registration</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-              <div className="text-2xl font-bold text-green-400 min-w-[120px]">10:00 AM</div>
+              <div className="text-2xl font-bold text-green-400 min-w-[120px]">09:00 AM</div>
               <div className="flex-1">
-                <h4 className="text-xl font-bold mb-2">Keynote: AI Agents Revolution</h4>
-                <p className="text-gray-300">Introduction to Google Cloud AI Agent ecosystem and latest innovations</p>
+                <h4 className="text-xl font-bold mb-2">Keynote - Organizers</h4>
+                <p className="text-gray-300">Opening remarks and event introduction</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-              <div className="text-2xl font-bold text-purple-400 min-w-[120px]">11:30 AM</div>
+              <div className="text-2xl font-bold text-purple-400 min-w-[120px]">09:20 AM</div>
               <div className="flex-1">
-                <h4 className="text-xl font-bold mb-2">Technical Deep Dive</h4>
-                <p className="text-gray-300">Hands-on workshop with Agent Development Kit (ADK)</p>
+                <h4 className="text-xl font-bold mb-2">Tech Talk 1</h4>
+                <p className="text-gray-300">Deep dive into Google Cloud AI and latest technologies</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
+              <div className="text-2xl font-bold text-orange-400 min-w-[120px]">11:00 AM</div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold mb-2">Mini Class</h4>
+                <p className="text-gray-300">Mobile, Web, and Live Streaming development workshops</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
+              <div className="text-2xl font-bold text-pink-400 min-w-[120px]">12:00 PM</div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold mb-2">Lunch Break & Networking</h4>
+                <p className="text-gray-300">Networking session with food and refreshments</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
               <div className="text-2xl font-bold text-red-400 min-w-[120px]">01:00 PM</div>
               <div className="flex-1">
-                <h4 className="text-xl font-bold mb-2">Mini Hackathon Begins</h4>
-                <p className="text-gray-300">Team formation and start building your AI agents</p>
+                <h4 className="text-xl font-bold mb-2">Mini Hackathon</h4>
+                <p className="text-gray-300">Building real-world solutions using Google Cloud</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-6 bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
               <div className="text-2xl font-bold text-yellow-400 min-w-[120px]">04:00 PM</div>
               <div className="flex-1">
-                <h4 className="text-xl font-bold mb-2">Demo & Awards</h4>
-                <p className="text-gray-300">Project presentations, judging, and prize ceremony</p>
+                <h4 className="text-xl font-bold mb-2">Winner Announcement & Closing</h4>
+                <p className="text-gray-300">Prize ceremony and closing remarks</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* FAQ Section */}
+      <section className="relative z-10 px-6 py-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                Frequently Asked Questions
+              </span>
+            </h2>
+            <p className="text-xl text-gray-300">Everything you need to know about the event</p>
+          </div>
+
+          <div className="space-y-6">
+            {/* FAQ Item 1 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">Who can attend this event?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      This event is open to developers, students, tech enthusiasts, and anyone interested in Google
+                      Cloud AI technologies. Whether you're a beginner or experienced developer, there's something for
+                      everyone!
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 2 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">Is there a registration fee?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      No, this event is completely free! We believe in making technology education accessible to
+                      everyone. Just register to secure your spot as seats are limited.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 3 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">What should I bring to the event?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      Bring your laptop with a stable internet connection, charger, and enthusiasm to learn! We'll
+                      provide WiFi, refreshments, and all the necessary development tools and resources.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 4 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">Do I need prior experience with Google Cloud?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      Not at all! While some programming knowledge is helpful, we'll cover everything from basics to
+                      advanced topics. Our sessions are designed to accommodate different skill levels.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 5 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">How do I participate in the Mini Hackathon?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      The hackathon is open to all attendees! You can form teams of 2-4 people during the event or come
+                      with your own team. We'll provide the challenge themes and all necessary resources to get started.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 6 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">Will food and beverages be provided?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      Yes! We'll provide breakfast, lunch, coffee breaks, and snacks throughout the day. We'll also
+                      accommodate dietary restrictions - just let us know when you register.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 7 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">How do I get to the venue?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      West Java Investment Hub (WJIH) is located in central Bandung and easily accessible by public
+                      transportation. Detailed directions and parking information will be sent to registered
+                      participants.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 8 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">Will I receive a certificate?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      Yes! All attendees will receive a digital certificate of participation. Hackathon winners will
+                      receive special certificates of achievement, and all participants get exclusive GDG swag!
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 9 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">Can I attend virtually?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      This is an in-person event to maximize networking and hands-on learning opportunities. However,
+                      key sessions will be recorded and shared with the community afterward.
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
+
+            {/* FAQ Item 10 */}
+            <Card className="bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <details className="group">
+                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-white/5 transition-colors duration-200">
+                    <h3 className="text-xl font-bold text-white">What if I need to cancel my registration?</h3>
+                    <div className="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200">
+                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </summary>
+                  <div className="px-4 pb-4 text-gray-300">
+                    <p>
+                      You can cancel your registration anytime before the event. Please let us know as soon as possible
+                      so we can offer your spot to someone on the waitlist. Contact us at gdgcloudbandung@gmail.com
+                    </p>
+                  </div>
+                </details>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
