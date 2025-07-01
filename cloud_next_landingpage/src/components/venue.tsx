@@ -22,7 +22,7 @@ export default function Venue() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold">West Java Investment Hub (WJIH)</h3>
-                <p className="text-muted-foreground">Jl. Diponegoro No.22, Bandung, Indonesia</p>
+                <p className="text-muted-foreground">Jl. Lingkar Selatan, Kec. Lengkong, Bandung</p>
               </div>
             </div>
             <Button asChild>

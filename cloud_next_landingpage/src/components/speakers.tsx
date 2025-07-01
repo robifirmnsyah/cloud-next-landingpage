@@ -3,60 +3,32 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const speakers = [
   {
-    name: 'Thomas Kurian',
-    title: 'CEO, Google Cloud',
-    avatar: 'https://placehold.co/100x100.png',
+    name: 'Esther Irawati Setiawan',
+    title: 'Google Developer Expert in AI and Cloud, Professor ISTTS',
+    avatar: 'https://storage.googleapis.com/cloud-next-bandung/images/speaker1.jpeg',
     initials: 'TK',
     aiHint: 'professional man'
   },
   {
-    name: 'Sundar Pichai',
-    title: 'CEO of Google and Alphabet',
-    avatar: 'https://placehold.co/100x100.png',
+    name: 'Imre Nagi',
+    title: 'Google Developer Expert Cloud',
+    avatar: 'https://storage.googleapis.com/cloud-next-bandung/images/speaker2.jpeg',
     initials: 'SP',
     aiHint: 'professional man glasses'
   },
   {
-    name: 'Yulie Kwon Kim',
-    title: 'VP of Product, Google Workspace',
-    avatar: 'https://placehold.co/100x100.png',
+    name: 'Joan Santoso',
+    title: 'Googe Developer Expert in AI and Cloud,  Vice Rector 1 Institut Informatika Indonesia (IKADO)',
+    avatar: 'https://storage.googleapis.com/cloud-next-bandung/images/speaker5.jpeg',
     initials: 'YK',
     aiHint: 'professional woman'
   },
   {
-    name: 'Matt Renner',
-    title: 'President, Global Revenue, Google Cloud',
-    avatar: 'https://placehold.co/100x100.png',
+    name: 'Ibnu Sina Wardy',
+    title: 'CEO @GITS.ID, Google Developer Expert Cloud and AI',
+    avatar: 'https://storage.googleapis.com/cloud-next-bandung/images/speaker4.png',
     initials: 'MR',
     aiHint: 'professional man suit'
-  },
-  {
-    name: 'Jeanine Banks',
-    title: 'VP & GM, Developer X, Google Cloud',
-    avatar: 'https://placehold.co/100x100.png',
-    initials: 'JB',
-    aiHint: 'professional woman'
-  },
-  {
-    name: 'Sandra Joyce',
-    title: 'VP, Google Threat Intelligence',
-    avatar: 'https://placehold.co/100x100.png',
-    initials: 'SJ',
-    aiHint: 'professional woman smiling'
-  },
-  {
-    name: 'Amin Vahdat',
-    title: 'VP, ML, Systems and Cloud AI',
-    avatar: 'https://placehold.co/100x100.png',
-    initials: 'AV',
-    aiHint: 'professional man smiling'
-  },
-  {
-    name: 'Alison Wagonfeld',
-    title: 'VP Marketing, Google Cloud',
-    avatar: 'https://placehold.co/100x100.png',
-    initials: 'AW',
-    aiHint: 'professional woman blazer'
   },
 ];
 
