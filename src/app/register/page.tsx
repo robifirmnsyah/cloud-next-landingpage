@@ -2,6 +2,8 @@
 
 import Script from 'next/script'
 import { useState, useEffect } from 'react'
+import { ArrowLeft } from 'lucide-react'
+import Link from 'next/link'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 
@@ -60,6 +62,17 @@ export default function RegisterPage() {
       {/* Main Content */}
       <main className="relative z-10 px-4 py-8 md:px-6 md:py-16">
         <div className="max-w-4xl mx-auto">
+          {/* Back Button */}
+          <div className="mb-6">
+            <Link 
+              href="/"
+              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200 group"
+            >
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
+              <span className="text-sm md:text-base">Back to Event</span>
+            </Link>
+          </div>
+
           {/* Page Title */}
           <div className="text-center mb-6 md:mb-12">
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-6">
