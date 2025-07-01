@@ -9,6 +9,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetTitle,
 } from "@/components/ui/sheet";
 
 export default function Header() {
@@ -57,6 +58,7 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-80 p-0">
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col h-full">
                   {/* Mobile Header */}
                   <div className="flex items-center justify-between p-6 border-b border-border/40">

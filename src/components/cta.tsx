@@ -23,13 +23,15 @@ export default function Cta() {
                 <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </Link>
-            <Button
-              variant="outline"
-              className="border-white/20 text-white hover:bg-white/10 px-12 py-6 text-xl rounded-full bg-transparent"
-            >
-              Learn More
-              <ExternalLink className="ml-2 w-6 h-6" />
-            </Button>
+            <Link href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2025-wrap-up">
+              <Button
+                variant="outline"
+                className="border-white/20 text-white hover:bg-white/10 px-12 py-6 text-xl rounded-full bg-transparent"
+              >
+                Learn More
+                <ExternalLink className="ml-2 w-6 h-6" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

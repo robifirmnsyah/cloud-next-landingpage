@@ -1,13 +1,13 @@
 import { Card } from '@/components/ui/card';
 
 const agendaItems = [
-  { time: '07:30 AM', title: 'Registration', description: 'Check-in and welcome registration', color: 'text-blue-400' },
-  { time: '09:00 AM', title: 'Keynote - Organizers', description: 'Opening remarks and event introduction', color: 'text-green-400' },
-  { time: '09:20 AM', title: 'Tech Talk 1', description: 'Deep dive into Google Cloud AI and latest technologies', color: 'text-purple-400' },
-  { time: '11:00 AM', title: 'Mini Class', description: 'Mobile, Web, and Live Streaming development workshops', color: 'text-orange-400' },
-  { time: '12:00 PM', title: 'Lunch Break & Networking', description: 'Networking session with food and refreshments', color: 'text-pink-400' },
-  { time: '01:00 PM', title: 'Mini Hackathon', description: 'Building real-world solutions using Google Cloud', color: 'text-red-400' },
-  { time: '04:00 PM', title: 'Winner Announcement & Closing', description: 'Prize ceremony and closing remarks', color: 'text-yellow-400' },
+  { time: '07:30 - 09:00', title: 'Registration', description: 'Check-in and welcome registration', color: 'text-blue-400' },
+  { time: '09:00 - 09:20', title: 'Keynote - Organizers', description: 'Opening remarks and event introduction', color: 'text-green-400' },
+  { time: '09:20 - 11:00', title: 'Tech Talk 1', description: 'Deep dive into Google Cloud AI and latest technologies', color: 'text-purple-400' },
+  { time: '11:00 - 12:00', title: 'Mini Class', description: 'Mobile, Web, and Live Streaming development workshops', color: 'text-orange-400' },
+  { time: '12:00 - 13:00', title: 'Lunch Break & Networking', description: 'Networking session with food and refreshments', color: 'text-pink-400' },
+  { time: '13:00 - 16:00', title: 'Mini Hackathon', description: 'Building real-world solutions using Google Cloud', color: 'text-red-400' },
+  { time: '16:00 - 17:00', title: 'Winner Announcement & Closing', description: 'Prize ceremony and closing remarks', color: 'text-yellow-400' },
 ];
 
 export default function Agenda() {
@@ -25,8 +25,8 @@ export default function Agenda() {
           {agendaItems.map((item) => (
             <Card key={item.title} className="bg-muted/50 border-border rounded-2xl hover:border-primary transition-colors duration-300">
               <div className="p-6 flex items-center space-x-6">
-                <div className="w-32 flex-shrink-0">
-                  <p className={`text-xl font-bold ${item.color}`}>{item.time}</p>
+                <div className="w-40 flex-shrink-0">
+                  <p className={`text-xl font-bold ${item.color} whitespace-nowrap`}>{item.time}</p>
                 </div>
                 <div className="flex-grow">
                   <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>

@@ -11,7 +11,7 @@ export default function AgentDevDay() {
         <div className="text-center mb-16">
           <Badge className="mb-4 text-lg px-4 py-2">Special Event</Badge>
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-            Agent Development Day
+            Mini Hackathon
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Get ready to unlock your creativity and technical skills at Agent Development Day, part of Cloud Next Extended Bandung 2025!
