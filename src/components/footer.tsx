@@ -9,7 +9,7 @@ function FooterLogo() {
 }
 
 const socialLinks = [
-    { platform: 'email', icon: Mail, href: 'mailto:gdgcloudbandung@gmail.com', text: 'gdgcloudbandung@gmail.com', color: 'text-rose-500' },
+    { platform: 'email', icon: Mail, href: 'mailto:gdg@cloudbandung.id', text: 'gdg@cloudbandung.id', color: 'text-rose-500' },
     { platform: 'instagram', icon: Instagram, href: 'https://www.instagram.com/gdgcloudbandung/', text: '@gdgcloudbandung', color: 'text-rose-500' },
     { platform: 'youtube', icon: Youtube, href: 'https://www.youtube.com/@gdgcloudbandung', text: '@gdgcloudbandung', color: 'text-red-600' },
     { platform: 'linkedin', icon: Linkedin, href: 'https://www.linkedin.com/company/gdg-cloud-bandung/', text: 'GDG Cloud Bandung', color: 'text-sky-500' }
