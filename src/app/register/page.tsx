@@ -113,19 +113,31 @@ export default function RegisterPage() {
               </div>
               <div className="text-center p-3 bg-white/5 rounded-lg md:bg-transparent md:p-0">
                 <div className="text-lg md:text-2xl font-bold text-orange-400 mb-1 md:mb-2">📍 Venue</div>
-                <div className="text-sm md:text-lg">West Java Investment Hub</div>
+                <div className="text-sm md:text-lg">Gedung DPRD Provinsi Jawa Barat</div>
               </div>
             </div>
           </div>
 
           {/* Ticket Widget Container */}
           <div className={`bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl md:rounded-3xl p-4 md:p-6 transition-all duration-500 ${!widgetLoaded ? 'min-h-[200px]' : 'min-h-[400px]'}`}>
-            <div className="text-center mb-6 md:mb-8">
-              <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Choose Your Ticket</h2>
-              <p className="text-sm md:text-base text-gray-300 mb-3">Select your preferred ticket type and complete your registration</p>
+            <div className="flex flex-col items-center mb-6 md:mb-8">
+              <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-4 text-center">Choose Your Ticket</h2>
+              <p className="text-sm md:text-base text-gray-300 mb-3 text-center max-w-xs md:max-w-md">
+                Select your preferred ticket type and complete your registration
+              </p>
+              
+              {/* Small discount info */}
+              <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3 mb-3 w-fit max-w-full text-center">
+                <p className="text-green-400 text-sm">
+                  🎉 Join the hackathon and get 50% cashback on your ticket!
+                </p>
+              </div>
+              
+              <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 mb-4 w-fit max-w-full text-center">
                 <p className="text-yellow-400 text-sm">
                   💡 If ticket options don't appear, please refresh this page
                 </p>
+              </div>
             </div>
             
             {/* Goers Widget */}

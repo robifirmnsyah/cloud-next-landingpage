@@ -12,7 +12,7 @@ export default function Venue() {
               Event Venue
             </h2>
             <p className="text-lg text-muted-foreground">
-              The venue for this event is currently being finalized. Details will be announced soon.
+              Join us at the prestigious Gedung DPRD Provinsi Jawa Barat for Cloud Next Extended Bandung 2025.
             </p>
             <div className="flex items-start gap-4 pt-4">
               <div className="flex-shrink-0">
@@ -21,22 +21,30 @@ export default function Venue() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold">TBD</h3>
-                <p className="text-muted-foreground">To Be Determined</p>
-                <p className="text-muted-foreground">Bandung, Indonesia</p>
+                <h3 className="text-xl font-semibold">Gedung DPRD Provinsi Jawa Barat</h3>
+                <p className="text-muted-foreground">Jl. Diponegoro No.2, Citarum, Kec. Bandung Wetan</p>
+                <p className="text-muted-foreground">Bandung, Jawa Barat, Indonesia</p>
               </div>
             </div>
-            <Button disabled className="opacity-50 cursor-not-allowed">
-              <MapPin className="mr-2 h-4 w-4" />
-              Location Coming Soon
+            <Button asChild>
+              <Link href="https://maps.app.goo.gl/YourMapLink" target="_blank" rel="noopener noreferrer">
+                <MapPin className="mr-2 h-4 w-4" />
+                Get Directions
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center min-h-[300px]">
-            <div className="text-center">
-              <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-500 text-lg font-medium">Venue location coming soon</p>
-              <p className="text-gray-400 text-sm mt-2">Bandung, Indonesia</p>
-            </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.913302139939!2d107.61168768485133!3d-6.9009715497225175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c3d9c5d7f%3A0x40c0288c767b18!2sDewan%20Perwakilan%20Rakyat%20Daerah%20(DPRD)%20Provinsi%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1751950059367!5m2!1sid!2sid" 
+              width="100%" 
+              height="300" 
+              style={{border:0}} 
+              allowFullScreen={true}
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-[300px] md:h-[400px]"
+            />
           </div>
         </div>
       </div>

@@ -99,7 +99,7 @@ export default function Hero() {
                                     <MapPin className="w-4 h-4 md:w-5 md:h-5 text-white" />
                                 </div>
                                 <div className="text-left">
-                                    <div className="text-sm sm:text-base md:text-lg font-semibold text-white">TBD</div>
+                                    <div className="text-sm sm:text-base md:text-lg font-semibold text-white">Gedung DPRD Provinsi Jawa Barat</div>
                                     <div className="text-xs sm:text-sm text-gray-300">Bandung</div>
                                 </div>
                             </div>
