@@ -12,6 +12,21 @@ export default function RegisterPage() {
   const [isFirstLoad, setIsFirstLoad] = useState(true)
 
   useEffect(() => {
+    // Jalankan reload hanya di client dan hanya sekali per akses
+    if (typeof window !== 'undefined') {
+      if (!sessionStorage.getItem('register-page-refreshed')) {
+        sessionStorage.setItem('register-page-refreshed', 'true');
+        window.location.reload();
+        return; // stop further effect execution
+      } else {
+        sessionStorage.removeItem('register-page-refreshed');
+      }
+    }
+
+    // Reset state setiap kali halaman register diakses
+    setWidgetLoaded(false)
+    setIsFirstLoad(true)
+
     // Check if widget was previously loaded in this session
     const widgetCached = sessionStorage.getItem('goers-widget-loaded')
     if (widgetCached === 'true') {
@@ -107,7 +122,10 @@ export default function RegisterPage() {
           <div className={`bg-white/5 backdrop-blur-lg border-white/10 rounded-2xl md:rounded-3xl p-4 md:p-6 transition-all duration-500 ${!widgetLoaded ? 'min-h-[200px]' : 'min-h-[400px]'}`}>
             <div className="text-center mb-6 md:mb-8">
               <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Choose Your Ticket</h2>
-              <p className="text-sm md:text-base text-gray-300">Select your preferred ticket type and complete your registration</p>
+              <p className="text-sm md:text-base text-gray-300 mb-3">Select your preferred ticket type and complete your registration</p>
+                <p className="text-yellow-400 text-sm">
+                  💡 If ticket options don't appear, please refresh this page
+                </p>
             </div>
             
             {/* Goers Widget */}

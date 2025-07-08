@@ -2,6 +2,7 @@ import Header from '@/components/header';
 import Hero from '@/components/hero';
 import WhyAttend from '@/components/why-attend';
 import AgentDevDay from '@/components/agent-dev-day';
+import FAQ from '@/components/faq';
 import Speakers from '@/components/speakers';
 import Agenda from '@/components/agenda';
 import Venue from '@/components/venue';
@@ -17,6 +18,7 @@ export default function Home() {
         <WhyAttend />
         <Speakers />
         <AgentDevDay />
+        <FAQ />
         <Agenda />
         <Venue />
         <Cta />

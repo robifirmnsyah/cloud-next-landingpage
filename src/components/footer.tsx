@@ -37,7 +37,7 @@ export default function Footer() {
             <ul className="space-y-2 text-slate-300">
               <li>Saturday, August 2nd, 2025</li>
               <li>09:00 AM - 05:00 PM</li>
-              <li>West Java Investment Hub (WJIH)</li>
+              <li>TBD</li>
               <li>Bandung, Indonesia</li>
             </ul>
           </div>

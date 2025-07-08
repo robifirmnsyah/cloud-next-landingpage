@@ -99,8 +99,8 @@ export default function Hero() {
                                     <MapPin className="w-4 h-4 md:w-5 md:h-5 text-white" />
                                 </div>
                                 <div className="text-left">
-                                    <div className="text-sm sm:text-base md:text-lg font-semibold text-white">West Java Investment Hub</div>
-                                    <div className="text-xs sm:text-sm text-gray-300">(WJIH), Bandung</div>
+                                    <div className="text-sm sm:text-base md:text-lg font-semibold text-white">TBD</div>
+                                    <div className="text-xs sm:text-sm text-gray-300">Bandung</div>
                                 </div>
                             </div>
                         </CardContent>
@@ -131,6 +131,15 @@ export default function Hero() {
                             <div className="text-xs text-gray-300 uppercase tracking-wide">Seconds</div>
                         </div>
                     </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-3 text-lg font-semibold rounded-full shadow-lg">
+                        <Link href="/register">
+                            Register Now
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </section>

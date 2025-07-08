@@ -12,7 +12,7 @@ export default function Venue() {
               Event Venue
             </h2>
             <p className="text-lg text-muted-foreground">
-              The event will be held at the prestigious West Java Investment Hub (WJIH), a premier venue known for its state-of-the-art facilities and central location.
+              The venue for this event is currently being finalized. Details will be announced soon.
             </p>
             <div className="flex items-start gap-4 pt-4">
               <div className="flex-shrink-0">
@@ -21,26 +21,22 @@ export default function Venue() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold">West Java Investment Hub (WJIH)</h3>
-                <p className="text-muted-foreground">Jl. Lingkar Selatan, Kec. Lengkong, Bandung</p>
+                <h3 className="text-xl font-semibold">TBD</h3>
+                <p className="text-muted-foreground">To Be Determined</p>
+                <p className="text-muted-foreground">Bandung, Indonesia</p>
               </div>
             </div>
-            <Button asChild>
-                <Link href="https://maps.app.goo.gl/vAwL88bWHeGq7Xoe9" target="_blank">
-                  Get Directions
-                  <ArrowRight className="ml-2"/>
-                </Link>
+            <Button disabled className="opacity-50 cursor-not-allowed">
+              <MapPin className="mr-2 h-4 w-4" />
+              Location Coming Soon
             </Button>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.700805234186!2d107.62438837588384!3d-6.926322367797562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7ef929aa4b7%3A0x9e475f1f42911254!2sWest%20Java%20Investment%20Hub%20(WJI-Hub)!5e0!3m2!1sid!2sid!4v1751178987276!5m2!1sid!2sid"
-              className="w-full aspect-video"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div className="rounded-2xl overflow-hidden shadow-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center min-h-[300px]">
+            <div className="text-center">
+              <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+              <p className="text-gray-500 text-lg font-medium">Venue location coming soon</p>
+              <p className="text-gray-400 text-sm mt-2">Bandung, Indonesia</p>
+            </div>
           </div>
         </div>
       </div>

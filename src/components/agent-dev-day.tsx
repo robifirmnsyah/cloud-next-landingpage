@@ -25,7 +25,7 @@ export default function AgentDevDay() {
               <Sparkles className="w-8 h-8 text-orange-500 mr-2" />
               <h3 className="text-2xl font-bold text-foreground">This year&apos;s special highlight?</h3>
             </div>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-6">
               We&apos;re launching a <strong>Mini Hackathon using ADK (Agent Development Kit)</strong>, where you&apos;ll get the chance to build your own AI Agent and compete for exciting prizes.
             </p>
           </CardContent>

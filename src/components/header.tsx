@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
 import {
   Sheet,
   SheetContent,
@@ -14,12 +15,21 @@ import {
 
 export default function Header() {
   const pathname = usePathname();
-  const isRegisterPage = pathname === '/register';
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure component is mounted before checking pathname to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Only determine page type after mounting
+  const isRegisterPage = mounted ? pathname === '/register' : false;
 
   const navLinks = [
     { href: isRegisterPage ? '/#about' : '#about', label: 'About' },
     { href: isRegisterPage ? '/#speakers' : '#speakers', label: 'Speakers' },
     { href: isRegisterPage ? '/#agent-dev-day' : '#agent-dev-day', label: 'Mini Hackathon' },
+    { href: isRegisterPage ? '/#faq' : '#faq', label: 'FAQ' },
     { href: isRegisterPage ? '/#agenda' : '#agenda', label: 'Agenda' },
     { href: isRegisterPage ? '/#venue' : '#venue', label: 'Venue' },
   ];

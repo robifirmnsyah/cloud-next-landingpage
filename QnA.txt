@@ -1,0 +1,45 @@
+🧠 Frequently Asked Questions (FAQ) – Hackathon Edition
+1. Who can participate in this hackathon?
+Anyone! The hackathon is open to both individuals and teams. Whether you're a beginner or an experienced developer, you're welcome to join.
+
+2. Can I join the hackathon alone?
+Yes, you can join as a solo participant or as part of a team. Either is fine.
+
+3. Is there a limit to team size?
+Teams can consist of 1 to 4 people. We recommend working in small teams to balance collaboration and efficiency.
+
+4. Do I need to pay extra to join the hackathon?
+No additional cost! As long as you've purchased a ticket (Hackathon Pass), you're automatically eligible to join the hackathon.
+
+5. Is there a specific theme or product we must build?
+No specific theme is enforced. You are free to build anything useful or meaningful. Your solution doesn’t have to be perfect — it just needs to show effort and purpose.
+
+6. What tools or programming languages can I use?
+You can use any language or framework you're comfortable with — as long as your project integrates the provided ADK (App Development Kit).
+
+7. Do I need to be an expert to participate?
+Not at all. The hackathon is open to all skill levels. This is a great opportunity to learn, collaborate, and experiment with new ideas.
+
+8. Will there be mentorship or technical support during the hackathon?
+Yes, we’ll have mentors available during key hours to help with technical questions or project feedback.
+
+9. What should I prepare before the hackathon?
+Bring your own laptop and charger
+
+Make sure you have access to the ADK and documentation
+
+Install your preferred development tools
+
+Bring your ideas and a positive mindset!
+
+10. What are the judging criteria?
+Projects will generally be judged based on:
+
+Functionality
+
+Usefulness / Problem Solving
+
+Integration with ADK
+
+Presentation / Demo Quality
+(You don’t need a perfect UI — focus on value and execution)
