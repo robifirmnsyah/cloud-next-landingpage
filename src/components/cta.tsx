@@ -17,7 +17,7 @@ export default function Cta() {
             in Bandung.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/register">
+            <Link href="https://forms.gle/Yzmo26ovy1RHUDvLA" target="_blank" rel="noopener noreferrer">
               <Button className="bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 hover:from-blue-600 hover:via-purple-600 hover:to-red-600 text-white px-12 py-6 text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300">
                 Register Now
                 <ArrowRight className="ml-2 w-6 h-6" />

@@ -82,40 +82,6 @@ export default function AgentDevDay() {
           </Card>
         </div>
 
-        {/* Cashback Promotion Banner */}
-        <div className="mb-16">
-          <Card className="relative overflow-hidden bg-gradient-to-br from-emerald-400 via-cyan-400 to-blue-500 border-0 shadow-2xl transform hover:scale-105 transition-all duration-500">
-            {/* Animated background elements */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10"></div>
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-20 translate-x-20 animate-pulse"></div>
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/15 rounded-full translate-y-16 -translate-x-16 animate-bounce"></div>
-            <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-yellow-300/20 rounded-full -translate-x-12 -translate-y-12 animate-ping"></div>
-            
-            {/* Sparkle effects */}
-            <div className="absolute top-8 left-8 w-2 h-2 bg-yellow-300 rounded-full animate-twinkle"></div>
-            <div className="absolute top-16 right-16 w-1 h-1 bg-white rounded-full animate-twinkle delay-1000"></div>
-            <div className="absolute bottom-8 right-8 w-2 h-2 bg-yellow-300 rounded-full animate-twinkle delay-500"></div>
-            
-            <CardContent className="relative z-10 p-8 md:p-12 text-center text-white">
-              <div className="flex items-center justify-center mb-6">
-                <div className="relative">
-                  <Gift className="w-10 h-10 mr-3 text-yellow-300 drop-shadow-lg animate-bounce" />
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
-                </div>
-                <Badge className="bg-yellow-400/90 text-gray-900 border-yellow-300 px-4 py-2 font-bold text-sm shadow-lg animate-pulse">
-                  🎉 SPECIAL OFFER
-                </Badge>
-              </div>
-              <h3 className="text-4xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-yellow-200 to-white bg-clip-text text-transparent drop-shadow-lg">
-                Join the Hackathon &
-              </h3>
-              <h4 className="text-3xl md:text-5xl font-bold text-yellow-300 mb-6 animate-pulse">
-                Get 50% Cashback!
-              </h4>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="text-center">

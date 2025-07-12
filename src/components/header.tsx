@@ -57,7 +57,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <div className="hidden md:block">
             <Button asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <Link href="/register">Register Now</Link>
+              <Link href="https://forms.gle/Yzmo26ovy1RHUDvLA" target="_blank" rel="noopener noreferrer">Register Now</Link>
             </Button>
           </div>
           <Sheet>
@@ -93,7 +93,7 @@ export default function Header() {
                   {/* Mobile CTA */}
                   <div className="p-6 border-t border-border/40">
                     <Button asChild className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                      <Link href="/register">Register Now</Link>
+                      <Link href="https://forms.gle/Yzmo26ovy1RHUDvLA" target="_blank" rel="noopener noreferrer">Register Now</Link>
                     </Button>
                   </div>
                 </div>
